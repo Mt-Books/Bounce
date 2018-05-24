@@ -1,10 +1,15 @@
-Ball[] balls = new Ball[ 10 ];
+// Frank Chen
+// APCS2 pd2
+// HW53 -- All That Bouncin'
+// 2018-05-23
+
+Ball[] balls = new Ball[ 30 ];
 
   void setup() 
   {
     background( 0 );
     size( 600, 600 );
-    for( int i = 0; i < 10; i++ )
+    for( int i = 0; i < 30; i++ )
     {
       balls[ i ] = new Ball();
     }
@@ -16,5 +21,6 @@ Ball[] balls = new Ball[ 10 ];
    for( Ball ball : balls )
    {
      ball.move();
+     ball.draw();
    }
   }
